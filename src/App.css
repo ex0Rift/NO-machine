@@ -20,11 +20,23 @@
 
 .input-box{
   position: absolute;
-  bottom: 5px;
-  width: 90%;
-  background-color: #555555;
-  border: 1px solid white;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+
+  text-align: left;
+  font-size: 40px;
+  color: #c4c4c4;
+}
+
+.input-box input{
+  width: inherit;
+  font-size: 40px;
   border-radius: 16px;
+  padding: 15px 5px;
+  border: 1px bold white;
+  background-color: #464646;
 }
 
 

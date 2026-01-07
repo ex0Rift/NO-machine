@@ -2,13 +2,19 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [value, setValue] = useState("");
+
   return (
       <div>
         <div>
-          <h1>the text chat goes here</h1>
+          <h1>the text chat goes here {value}</h1>
         </div>
-        <div>
-          <h1 className='input-box'>the input box goes here</h1>
+        <div className='input-box'>
+          <input
+            type='text'
+            value={value}
+            onChange={e => setValue(e.target.value)}
+          />
         </div>
       </div>
   )
