@@ -22,14 +22,16 @@ function App() {
           
 
   return (
-      <div>
-        <div>
-          <h1>the text chat goes here {value}</h1>
-          <ul>{listChat}</ul>
+      <div className='body'>
+        <div className='chat-area'>
+          <ul className='chat-list'>
+            {listChat}
+          </ul>
         </div>
         <div className='input-box'>
           <input
             type='text'
+            placeholder='Write your message'
             value={value}
             onChange={e => setValue(e.target.value)}
           />

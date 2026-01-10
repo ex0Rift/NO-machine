@@ -1,8 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.body{
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .logo {
@@ -19,13 +20,10 @@
 }
 
 .input-box{
-  position: absolute;
   display: flex;
   gap: 15px;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95%;
+  margin-inline: 1%;
+  width: 98vw;
 
   text-align: left;
   font-size: 40px;
@@ -36,18 +34,25 @@
   width: inherit;
   font-size: 40px;
   border-radius: 16px;
-  padding: 15px 5px;
+  padding: 15px 15px;
   border: 1px solid white;
-  background-color: #464646;
+  background-color: #383838;
 }
 
 .input-box button{
-  background-color: #464646;
+  background-color: #383838;
   border: 1px solid white;
   border-radius: 32px;
 }
 
-
+.chat-area{
+  height: 100%;
+  background-color: #383838;
+  border-radius: 16px;
+  border: 1px solid white;
+  width: 98vw;
+  margin-inline: 1%;
+}
 
 @keyframes logo-spin {
   from {
