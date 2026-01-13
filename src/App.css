@@ -52,6 +52,7 @@
   border: 1px solid white;
   width: 98vw;
   margin-inline: 1%;
+  overflow-y: auto;
 }
 
 .chat-list{
