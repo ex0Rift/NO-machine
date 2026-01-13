@@ -54,6 +54,11 @@
   margin-inline: 1%;
 }
 
+.chat-list{
+  font-size: 25px;
+  list-style: none;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

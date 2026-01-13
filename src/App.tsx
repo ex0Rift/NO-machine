@@ -19,19 +19,23 @@ function App() {
         color: message.user ? '#ffffff' : '#b6b6b6ff'
       }}
     > 
-      {message.user ? 'You : ' : 'Bot : '}
+      {message.user ? 'You : ' : 'Jim : '}
       {message.text}
     </li>
   );
 
 function SendMessage(input:string){
   const newItem = {text:input,user:true,id:Object.keys(chat).length+1};
-
   setChat([...chat,newItem]);
-
+  
+  fetch("https://naas.isalman.dev/no")
+    .then(r => r.json())
+    .then(response => {
+      const newItem_bot = {text:response.reason,user:false,id:Object.keys(chat).length+2};
+      setChat(prevChat => [...prevChat,newItem_bot]);
+    });
   setValue("");
 }
-          
 
   return (
       <div className='body'>
